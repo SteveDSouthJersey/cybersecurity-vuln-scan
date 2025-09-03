@@ -17,12 +17,19 @@ the complete goals for the project are as follows:
 Repository structure:
 cybersecurity-vuln-scan/
 │
+
 ├── README.md                        # Project overview (this file)
+
 ├── artifacts/                       # Raw scan results (CSV/HTML)
+
 │   ├── Metasploitable2_Scan.csv
+
 │   └── Metasploitable2_Scan.html
+
 ├── report/                          # Written assessment/report
+
 │   └── Vulnerability-Assessment-Report.md
+
 └── scripts/                         # Optional helper scripts
     └── summarize_critical_high.py
 Steps to open:
