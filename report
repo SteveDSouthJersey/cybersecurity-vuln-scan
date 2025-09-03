@@ -1,0 +1,78 @@
+report/Vulnerability-Assessment-Report.md
+
+# Vulnerability Assessment Report
+
+## 1. Executive Summary
+This assessment was conducted in a controlled lab environment using Nessus Essentials to scan the Metasploitable 2 VM.  
+The purpose was to identify vulnerabilities, assess their severity, and demonstrate remediation planning as part of a cybersecurity portfolio project.
+
+**Key Findings:**
+- [8] Critical vulnerabilities
+- [5] High vulnerabilities
+- [18] Medium vulnerabilities
+- [8] Low vulnerabilities
+- [77] Informational items
+
+---
+
+## 2. Scope
+- **Target System:** Metasploitable 2  
+- **IP Address:** 192.168.56.101  
+- **Tool Used:** Nessus Essentials  
+- **Date of Scan:** [Insert Date]
+
+---
+
+## 3. Methodology
+1. Installed and configured Nessus Essentials.  
+2. Created a Basic Network Scan targeting the Metasploitable 2 VM.  
+3. Ran the scan and exported results in CSV and HTML.  
+4. Analyzed vulnerabilities by severity.
+
+---
+
+## 4. Findings (summarized)
+### Critical
+- Apache Tomcat AJP Connector Request Injection (Ghostcat)
+- Bind Shell Backdoor Detection
+- SSL Version 2 and 3 Protocol Detection
+- Apache Tomcat SEoL (<= 5.5.x)
+
+### High
+- ISC BIND Service Downgrade / Reflected DoS
+- NFS Shares World Readable
+- SSL Medium Strength Cipher Suites Supported (SWEET32)
+- Samba Badlock Vulnerability
+- rlogin Service Detection
+
+### Medium
+- ISC BIND 9.x < 9.11.22, 9.12.x < 9.16.6, 9.17.x < 9.17.4 DoS
+- SSL Certificate Cannot Be Trusted
+- SSL Self-Signed Certificate
+- TLS Version 1.0 Protocol Detection
+- Unencrypted Telnet Server
+
+### Low/Informational
+- SSH Server CBC Mode Ciphers Enabled
+- SSH Weak Key Exchange Algorithms Enabled
+- SSL/TLS Diffie-Hellman Modulus <= 1024 Bits (Logjam)
+- SSL/TLS EXPORT_DHE <= 512-bit Export Cipher Suites Supported (Logjam)
+
+---
+
+## 5. Recommendations
+- Apply relevant patches and updates.  
+- Disable or remove unnecessary services.  
+- Enforce stronger authentication methods.  
+- Harden configurations according to security best practices.
+
+---
+
+## 6. Conclusion
+This project demonstrated the ability to use Nessus to identify vulnerabilities in a vulnerable system.  
+The results highlight the importance of continuous vulnerability management and patching.
+
+---
+
+## 7. Appendices
+- Full scan results are available in the `/artifacts` folder as CSV and HTML.
