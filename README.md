@@ -32,8 +32,13 @@ cybersecurity-vuln-scan/
 
 └── scripts/                         # Optional helper scripts
     └── summarize_critical_high.py
+
 Steps to open:
+
 -Open artifact/ folder to view data
+
 CSV for structured data
+
 HTML for formatted report
+
 disclaimer: This project was created and performed in a controlled environment using a virtual machine.
